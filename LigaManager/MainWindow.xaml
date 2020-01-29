@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LigaManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Gestor de jugadores" Height="500" Width="900" Icon="Images/acb-icon.png">
     <Grid>
-        
+
+        <DataGrid x:Name="dataGridJugadores" HorizontalAlignment="Left" Height="319" Margin="20,52,0,0" VerticalAlignment="Top" Width="843">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"/>
+                <DataGridTextColumn Binding="{Binding Nombre}" Header="NOMBRE" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Apellido}" Header="APELLIDO" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Posicion}" Header="POSICION" Width="100"/>
+                <DataGridTextColumn Binding="{Binding FechaAlta}" Header="FECHA DE ALTA" Width="150"/>
+                <DataGridTextColumn Binding="{Binding Salario}" Header="SALARIO" Width="100"/>
+                <DataGridTextColumn Binding="{Binding Equipo}" Header="EQUIPO" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Altura}" Header="ALTURA" Width="90"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Content="NUEVO" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="20,397,0,0" Height="43"/>
+        <Button Content="ELIMINAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="171,397,0,0" Height="43"/>
+        <Button Content="MODIFICAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="328,397,0,0" Height="43"/>
+        <Button Content="SALIR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="737,397,0,0" Height="43" Click="onClickSalir"/>
+        <Button Content="GENERAR INFORME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="477,397,0,0" Height="43"/>
+        <Label Content="JUGADORES LIGA ACB" HorizontalAlignment="Left" Margin="241,-6,0,0" VerticalAlignment="Top" FontFamily="Allstar" FontSize="36" Height="53" Width="362">
+            <Label.Effect>
+                <DropShadowEffect Color="#FFFFB795"/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Window>
