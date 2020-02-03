@@ -5,16 +5,29 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaManager", "LigaManager\LigaManager.csproj", "{0892485E-3E27-42A7-B613-1B7D3A74E415}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report", "Report\Report.rptproj", "{57044AB7-6AFA-4C81-9D46-75CF46E68619}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0892485E-3E27-42A7-B613-1B7D3A74E415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0892485E-3E27-42A7-B613-1B7D3A74E415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0892485E-3E27-42A7-B613-1B7D3A74E415}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{0892485E-3E27-42A7-B613-1B7D3A74E415}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
 		{0892485E-3E27-42A7-B613-1B7D3A74E415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0892485E-3E27-42A7-B613-1B7D3A74E415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Debug|Any CPU.ActiveCfg = Debug
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Debug|Any CPU.Build.0 = Debug
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Debug|Any CPU.Deploy.0 = Debug
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Release|Any CPU.ActiveCfg = Release
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Release|Any CPU.Build.0 = Release
+		{57044AB7-6AFA-4C81-9D46-75CF46E68619}.Release|Any CPU.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
