@@ -1,0 +1,35 @@
+﻿<Window x:Class="LigaManager.InformeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LigaManager"
+         xmlns:viewer="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Informe por equipo" Icon="Images/acb-informs.png" Height="450" Width="889.474">
+    <Grid Background="#FF6E6E6B">
+
+        <WindowsFormsHost x:Name="windowsFormsHost" HorizontalAlignment="Left" Height="357" Margin="171,34,0,0" VerticalAlignment="Top" Width="685">
+            <viewer:ReportViewer x:Name="informeDatos" />
+        </WindowsFormsHost>
+        <Button x:Name="btnGenerar" Visibility="Hidden" Content="GENERAR INFORME" HorizontalAlignment="Left" Margin="171,359,0,0" VerticalAlignment="Top" Width="685" Height="32"/>
+        <ListBox Name="listBox"  HorizontalAlignment="Left" Height="307" Margin="23,84,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="listBoxChangedEvent">
+            <ListBoxItem Content="Regal Barcelona"/>
+            <ListBoxItem Content="Real Madrid"/>
+            <ListBoxItem Content="P.E Valencia"/>
+            <ListBoxItem Content="Caja laboral"/>
+            <ListBoxItem Content="Gran Canaria"/>
+            <ListBoxItem Content="CAI Zaragoza"/>
+        </ListBox>
+        <Label Content="SELECCIONA EL &#xD;&#xA;EQUIPO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,34,0,0" Width="126" Height="45"/>
+    </Grid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Orange" SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+</Window>
